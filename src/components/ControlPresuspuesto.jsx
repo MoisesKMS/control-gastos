@@ -1,11 +1,6 @@
-function ControlPresuspuesto({ presupuesto }) {
+import { formatearCantidad } from "../Helpers";
 
-    const formatearCantidad = (cantidad) => {
-        return cantidad.toLocaleString('en-US', {
-            style: 'currency',
-            currency: 'USD'
-        })
-    }
+function ControlPresuspuesto({ presupuesto }) {
 
     return (
         <div className="contenedor-presupuesto contenedor sombra dos-columnas">
