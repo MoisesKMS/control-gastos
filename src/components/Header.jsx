@@ -3,6 +3,7 @@ import NuevoPresupuesto from "./NuevoPresupuesto";
 
 function Header({
     gastos,
+    setGastos,
     presupuesto,
     setPresupuesto,
     isValidPresupuesto,
@@ -16,7 +17,10 @@ function Header({
                 {isValidPresupuesto ? (
                     <ControlPresuspuesto
                         presupuesto={presupuesto}
+                        setPresupuesto={setPresupuesto}
                         gastos={gastos}
+                        setGastos={setGastos}
+                        setIsValidPresupuesto={setIsValidPresupuesto}
                     />
                 ) : (
                     <NuevoPresupuesto
