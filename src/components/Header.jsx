@@ -13,7 +13,7 @@ function Header({
     return (
         <>
             <header>
-                <h1>Planificador de Gastos</h1>
+                <h1>Planificador</h1>
                 {isValidPresupuesto ? (
                     <ControlPresuspuesto
                         presupuesto={presupuesto}
